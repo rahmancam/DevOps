@@ -125,6 +125,20 @@
       - CircleCI
       - CodeShip
       - SemaPhoreCI
+  - Architecture
+    - Master:
+      - Schedules Build Job
+      - Dispatches builds to the slave for actual job execution
+      - Monitoring the slave and recording the build results
+
+    - Slave:
+      - Execute build jobs dispatched my master
+      - Jenkins Job:
+        - Job is refer to runnable tasks that are controlled and monitored by Jenkins
+      - Slave/ Node:
+        - Slaves are computers that are setup to build Projects for a master
+        - Jenkins Run separate program called 'Slave agents' on Slaves.
+        - When slaves are registered to a master, a master starts distributing the load to Slaves.
       
 
 
